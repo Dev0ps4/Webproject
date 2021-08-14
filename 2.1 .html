@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="2n.css" type="text/css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        </div>
+        <div id="about">
+            <a href="#" title="О себе" onclick="slowScroll('#main')">Обо мне</a>
+            <a href="#" title="Контакты" onclick="slowScroll('#contacts')">Контакты</a>
+        </div>
+    </header>
+    <div id="top">
+        <img src="RVw9KGAx2pw.jpg" class="img-fluid">
+    </div>
+    <div id="main">
+        <div class="name">
+            <h2>Меня зовут Яцевич Кирилл</h2>
+            <span>Студент 2 курса БГУИР, Факультет инфокоммуникаций.<br>Мои хобби:
+            	<ul>
+            		<li>3D-рисование</li>
+            		<li>Игра на гитаре</li>
+            	</ul>
+
+                любимые фильмы:<br>
+                <ol>
+                    <li> Побег из Шоушенка (1994);</li>
+                <li>  Зеленая миля (1999);</li>
+                <li>  Форрест Гамп (1994);</li>
+                </ol>
+                
+            </span>
+        </div>
+
+        <div id="contacts">
+            <h5>Контакты</h5>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a href="https://e.mail.ru/inbox/">yсevich@mail.ru</a>
+            <br>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <a href="tel:+375(29)1387212">+375291377315</a>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function() {
+            if ($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+    </script>
+</body>
+
+</html>

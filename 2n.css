@@ -1,0 +1,242 @@
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color:white;
+  font-family:cursive;
+}
+
+/* Шапка сайта */
+
+header {
+  width: 100%;
+  padding: 10px 0.5% 0px 0.5%;
+  background: transparent;
+  float: left;
+  position: fixed;
+   
+}
+
+header #logo {
+  color: white;
+  cursor: pointer;
+}
+
+header #logo span {
+  font-size: 1.7em;
+
+  margin-left: 45px;
+    margin-top: 45px; 
+  font-family:  serif;
+}
+
+@media (min-width: 701px) {
+  #logo {
+    float: left;
+    width: 30%;
+    font-size: 1.1em;
+  }
+    #about a{
+        font-size: 1.5em;    }
+
+  #about {
+    float: right;
+    width: 67%;
+    }
+    #main .name h2{
+        margin-top: -50px;
+       font-size: 1.9em;
+    }
+}
+
+@media (max-width: 321px) {
+header #logo span {
+ font-size: 1.2em;
+    float: left;
+      margin-top:-10px;
+     margin-left:2px;
+  }
+    #about {
+        margin-top: -22px;
+    }
+    #about a{
+        font-size: 0.7em;
+    }
+   #main .name h2{
+        margin-top: -50px;
+       font-size: 0.9em;
+    }
+    #main span{
+        margin-top: -50px;
+         font-size: 0.6em;
+}
+    #about  a:last-child {
+  margin-left: -2.5%;
+   
+}
+}
+
+@media (min-width: 322px) and (max-width: 426px){
+header #logo span {
+ font-size: 1.2em;
+    float: left;
+      margin-top:-10px;
+     margin-left:2px;
+  }
+    #about {
+        margin-top: -20px;
+    }
+    #about a{
+        font-size: 0.9em;
+    }
+   #main .name h2{
+        margin-top: -100px;
+    }
+
+}    
+@media (min-width: 427px) and (max-width:700px){
+header #logo span {
+ font-size: 1.3em;
+    float: left;
+      margin-top:-5px;
+     margin-left:2px;
+  }
+    #about {
+        margin-top: -10px;
+    }
+    #about a{
+        font-size: 1.1em;
+    }
+   #main .name h2{
+        margin-top: -100px;
+    }
+}
+
+
+
+#about {
+  text-align: center;
+  font-size: 1em;
+  line-height: 40px;
+  margin-bottom: 10px;
+    font-family: sans-serif;
+}
+
+
+
+#about  a {color: azure}
+
+#about  a:hover {
+  color:darkgray;
+  text-decoration: underline;
+}
+
+#about  a:first-child {
+  margin-right: 7%;
+}
+.fixed {
+  z-index: 5000;
+  background-color: white;
+  border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+  color: darkgray;
+}
+
+.fixed #about a {color: darkgray}
+.fixed #about a:hover {color:dimgray}
+
+/* блок сайта сайта */
+
+#top {
+  background-blend-mode: multiply;
+  background-color:white;
+  background-size: cover;
+  text-align: center;
+  color:white;
+}
+@media (min-width: 1001px) {
+  #top {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 321px) {
+    #logo{  
+        float: left;
+    width: 10%;
+    font-size: 0.6em;
+        
+    }
+}
+
+@media (min-width: 1439px) {
+header #logo span {
+ font-size: 2.5em;
+    float: left;
+      margin-top:10px;
+     margin-left:20px;
+  }
+    #about {
+        margin-top: 20px;
+    }
+    #about a{
+        font-size: 1.8em;
+    }
+   #main .name h2{
+        margin-top: 100px;
+       font-size: 3em;
+    }
+    #main span{
+        margin-top: -100px;
+         font-size: 1.1em;
+}
+    #contacts {
+        font-size: 1.3em;
+    }
+    #contacts h5 {
+        font-size: 1.4em;
+    }
+}
+
+/* Блок с себе */
+
+#main {
+  float: left;
+  background-color: white;
+  border-top: 2px solid silver;
+
+  font-size: 1.3em;
+    padding: 100px 5%;
+    width: 100%;
+}
+#main span{
+    font-family: sans-serif;
+}
+
+.name h2{
+    font-family:sans-serif;
+    color: black;
+    
+}
+
+
+/* контакты */
+
+#contacts{
+  width: 100%;
+  float: left;
+  padding-bottom: 40px;
+  padding-top: 200px;
+  border-top: 4px solid dimgray ;
+  background:white;
+font-family:sans-serif;
+    
+}
+
+
+
+
